@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    -webkit-touch-callout: none;  /*系统默认菜单被禁用*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -khtml-user-select: none; /*早期浏览器*/
+    -moz-user-select: none; /*火狐*/
+    -ms-user-select: none; /*IE10*/
+    user-select: none;
+    box-sizing: border-box;
+}
+html, body, #app{
+    width: 100%;
+    height: 100%;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,input,textarea,select{
+    padding:0;
+    margin:0;
+}
+body{font-size: .12rem;background:#fff;font-family: 'PingFangSC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback'}
+h1,h2,h3,h4,h5,h6,strong,b,i,em{
+    font-style:normal;
+    font-weight:normal;
+    font-size:100%;
+}
+div,a,li,ul,span,p,input,img,textarea,button,select,form,dd,dl,td,th,h1,h2,h3,h4,h5,h6,ol{
+    box-sizing: border-box;
+    padding: 0;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+li{list-style:none;}
+a{
+    text-decoration:none;
+    color:#666;
+}
+input{
+    outline: none;
+    -webkit-user-select: auto; /*webkit浏览器*/
+}
+input::-webkit-input-placeholder{
+    font-size: 0.15rem;
+    color: #dcdcdc;
+}
+input:-moz-placeholder{
+    font-size: 0.15rem;
+    color: #dcdcdc;
+}
+input::-moz-placeholder{
+    font-size: 0.15rem;
+    color: #dcdcdc;
+}
+input:-ms-input-placeholder{
+    font-size: 0.15rem;
+    color: #dcdcdc;
+}
+
+
+@font-face {
+    font-family: 'iconfont';  /* Project id 1700971 */
+    src: url('//at.alicdn.com/t/font_1700971_3ndclkhv6w2.woff2?t=1640572606997') format('woff2'),
+    url('//at.alicdn.com/t/font_1700971_3ndclkhv6w2.woff?t=1640572606997') format('woff'),
+    url('//at.alicdn.com/t/font_1700971_3ndclkhv6w2.ttf?t=1640572606997') format('truetype');
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.fs-12 {
+    font-size: 12px!important;
+}
+.fs-14 {
+    font-size: 14px!important;
+}
+.fs-16 {
+    font-size: 16px!important;
+}
+.fs-21 {
+    font-size: 21px !important;
+}
+.fs-18 {
+    font-size: 18px !important;
+}
+.fs-20 {
+    font-size: 20px !important;
+}
+.fs-22 {
+    font-size: 22px !important;
+}
+.fs-24 {
+    font-size: 24px !important;
+}
+.fs-25 {
+    font-size: 25px !important;
+}
+.fs-32 {
+    font-size: 32px !important;
+}
+.fs-35 {
+    font-size: 35px !important;
+}
+.letter-spacing-3 {
+    letter-spacing: 3px;
+}
+
+
+.cursor-pointer {
+    cursor:pointer
+}
+.overflow_hidden{
+    overflow: hidden;
+}
+/* Bootstarp Modal */
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+.color-red{
+    color: #D42D03;
+}
+.color-999{
+    color: #A8A8A8;
+}
+.color-333{
+    color: #333333;
+}
+.color-yellow{
+    color: #F5CF4F;
+}
+
+.fw-600{
+    font-weight: bold;
+}
+
+.bgcfff{
+    background-color: #fff;
+}
+
+
+.paddingNone{
+    padding: 0;
+}
+.paddingLeft4{
+    padding-left: 4px;
+}
+.display_block{
+    display: block!important;
+}
+.display_none{
+    display: none!important;
+}
+.line-through{
+    text-decoration:line-through;
+}
+.text-align-c{
+    text-align: center;
+}
+.text-align-l{
+    text-align: left;
+}
+.text-align-r{
+    text-align: right;
+}
+
+
+
+.line-height28{
+    line-height: 28px;
+}
+.line-height22{
+    line-height: 22px;
+}
+
+/*修改vant样式*/
+.van-rate__item:not(:last-child),.van-rate__item{
+    padding-right: 0!important;
+}
+.van-empty__description{
+    margin:0!important;
+    font-size: 0.18rem!important;
+    color: #444444!important;
+    font-weight: bold!important;
+}

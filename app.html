@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+    <link rel="stylesheet" href="/css/reset.css">
+    <script>
+        // 14px = 0.14rem  375px = 3.75rem
+        (function(doc, win) {
+          var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              if (clientWidth >= 640) {
+                docEl.style.fontSize = '100px';
+              } else {
+                docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+                var div = document.createElement('div');
+                div.style.width = '1.4rem';
+                div.style.height = '0';
+                document.body.appendChild(div);
+                var ideal = 140 * clientWidth / 375;
+                var rmd = (div.clientWidth / ideal);
+                if (rmd > 1.2 || rmd < 0.8) {
+                  docEl.style.fontSize = 100 * (clientWidth / 375) / rmd + 'px';
+                }
+                document.body.removeChild(div);
+              };
+            };
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window)
+    </script>
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+</html>
